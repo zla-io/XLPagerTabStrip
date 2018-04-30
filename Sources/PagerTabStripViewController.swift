@@ -82,6 +82,11 @@ open class PagerTabStripViewController: UIViewController, UIScrollViewDelegate {
         }
         return .none
     }
+    
+    open func setDefaultIndex(_ index: Int) {
+        currentIndex = index
+        preCurrentIndex = index
+    }
 
     override open func viewDidLoad() {
         super.viewDidLoad()

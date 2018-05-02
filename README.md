@@ -219,6 +219,17 @@ settings.style.buttonBarItemsShouldFillAvailiableWidth = true
 public var buttonBarHeight: CGFloat?
 ```
 
+### Change Default Tab Index
+
+```swift
+
+override func viewDidLoad() {
+   setDefaultIndex(1)
+
+   super.viewDidLoad()
+}
+```
+
 **Important:** Settings should be called before `viewDidLoad` is called.
 ```swift
 override func viewDidLoad() {
@@ -305,7 +316,7 @@ Follow these 3 steps to run Example project: Clone XLPagerTabStrip repository, o
 To install XLPagerTabStrip, simply add the following line to your Podfile:
 
 ```ruby
-pod 'XLPagerTabStrip', '~> 8.0'
+pod 'XLPagerTabStrip', :git => 'https://github.com/zla-io/XLPagerTabStrip'
 ```
 
 ### Carthage
@@ -315,7 +326,7 @@ pod 'XLPagerTabStrip', '~> 8.0'
 To install XLPagerTabStrip, simply add the following line to your Cartfile:
 
 ```ogdl
-github "xmartlabs/XLPagerTabStrip" ~> 8.0
+github "zla-io/XLPagerTabStrip" ~> 8.0
 ```
 
 ## FAQ
